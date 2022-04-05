@@ -1,0 +1,29 @@
+@use '../../assets/scss/helper';
+@use '../../assets/scss/mixin';
+
+.about {
+	> .carousel {
+		margin-top: helper.toRem(50);
+	}
+	&__bigImg {
+		display: block;
+		width: 100%;
+		aspect-ratio: 1170/574;
+		object-fit: cover;
+	}
+	&__contact {
+		@include mixin.flexbox(space-around, flex-start);
+		padding: helper.toRem(132) 0;
+
+		h2 {
+			margin-bottom: helper.toRem(44);
+		}
+		text-align: center;
+	}
+	&__works {
+		margin-top: helper.toRem(44);
+		> p {
+			text-transform: capitalize;
+		}
+	}
+}

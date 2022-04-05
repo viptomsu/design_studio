@@ -1,0 +1,12 @@
+@use '../../assets/scss/helper';
+@use '../../assets/scss/constants';
+@use '../../assets/scss/mixin';
+
+.container {
+	width: helper.toRem(1170);
+	margin: auto;
+}
+.go-to-all-works {
+	@include mixin.flexbox();
+	padding: constants.$homeGap 0;
+}

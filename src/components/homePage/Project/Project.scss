@@ -1,0 +1,34 @@
+@use '../../../assets/scss/helper';
+@use '../../../assets/scss/constants';
+
+.home__project {
+	$textPadding: constants.$pad;
+	width: 70%;
+	aspect-ratio: 793/443;
+	background: {
+		size: cover;
+		repeat: no-repeat;
+		position: center;
+	}
+	cursor: pointer;
+	position: relative;
+	&Title{
+		position: absolute;
+		top: 0;
+		left: $textPadding;
+		z-index: 1;
+		transform: translateY(-50%);
+		text-transform: capitalize;
+		text-shadow: 2px 2px 2px white;
+		font: {
+			size: helper.toRem(30);
+			weight: 700;
+		}
+		color: constants.$primary;
+		&--right {
+			// direction: rtl;
+			left: auto;
+			right: $textPadding;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+@use '../../assets/scss/helper';
+@use '../../assets/scss/constants';
+
+.home {
+	&__projects {
+		padding: 0 constants.$pad;
+		:nth-child(2n + 1) {
+			margin-left: auto;
+		}
+		:not(:first-child) {
+			margin-top: constants.$homeGap;
+		}
+		.btn {
+			display: block;
+			margin: {
+				left: auto;
+				right: auto;
+			};
+		}
+	}
+}

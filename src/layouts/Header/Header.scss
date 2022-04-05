@@ -1,0 +1,26 @@
+@use '../../assets/scss/helper';
+@use '../../assets/scss/constants';
+
+.header {
+	.navbar{
+		margin: 0 -2.5rem;
+		display: flex;
+		padding-top: helper.toRem(50);
+		> :last-child {
+			margin-left: auto;
+		}
+		&__item {
+			color: constants.$primary;
+			font: {
+				size: 1.125rem;
+				weight: 700;
+			}
+			text-decoration: none;
+		}
+		&__toHome {
+			font-size: helper.toRem(23);
+			letter-spacing: 1px;
+		}
+	}
+
+}

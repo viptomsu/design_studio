@@ -1,0 +1,11 @@
+@use '../../assets/scss/constants';
+@use '../../assets/scss/helper';
+
+.heading {
+	color: constants.$primary;
+	font: {
+		size: helper.toRem(33);
+		weight: 700;
+	}
+	letter-spacing: 0.025em;
+}

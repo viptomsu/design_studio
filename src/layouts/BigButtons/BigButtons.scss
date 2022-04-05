@@ -1,0 +1,8 @@
+@use '../../assets/scss/constants';
+
+.big-buttons {
+	display: flex;
+	margin: {
+		bottom: constants.$homeGap;
+	}
+}

@@ -1,0 +1,30 @@
+@use '../../assets/scss/helper';
+@use '../../assets/scss/mixin';
+@use '../../assets/scss/constants';
+
+.hero-header {
+	@include mixin.flexbox(
+		$col: true,
+		$gap: helper.toRem(21)
+	);
+	min-height: helper.toRem(486);
+
+	color: constants.$primary;
+	letter-spacing: 1px;
+	&__heading {
+		font: {
+			size: helper.toRem(33);
+			weight: 700;
+		}
+	}
+	&__slogan {
+		font: {
+			size: helper.toRem(20);
+			weight: 400;
+		}
+	}
+
+	&.hero-header--big {
+		min-height: helper.toRem(572);
+	}
+}

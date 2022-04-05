@@ -1,0 +1,14 @@
+@use '../../assets/scss/constants';
+
+.logos {
+	&__collection {
+		padding: 0 constants.$pad;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: constants.$pad;
+		> img{
+			width: 100%;
+			aspect-ratio: 1/1;
+		}
+	}
+}

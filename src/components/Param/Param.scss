@@ -1,0 +1,13 @@
+@use '../../assets/scss/constants';
+@use '../../assets/scss/helper';
+@use 'sass:math';
+
+.param {
+	font: {
+		size: helper.toRem(17);
+		weight: 300;
+	}
+	color: constants.$textColor;
+	letter-spacing: 0.025em;
+	line-height: math.div(30, 17);
+}

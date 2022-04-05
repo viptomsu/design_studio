@@ -1,0 +1,20 @@
+@use '../../../assets/scss/helper';
+@use '../../../assets/scss/constants';
+
+.paragraph {
+	&--outstanding &__param{
+		$margin: helper.toRem(100);
+		margin: $margin $margin auto;
+	}
+	&__heading {
+		text-transform: capitalize;
+	}
+	&__param {
+		margin: {
+			top: helper.toRem(43);
+			bottom: auto;
+			left: constants.$pad;
+			right: helper.toRem(60);
+		}
+	}
+}

@@ -1,0 +1,45 @@
+@use '../../assets/scss/helper';
+@use '../../assets/scss/constants';
+
+.projectPage {
+	> .carousel {
+		margin-top: helper.toRem(50);
+	}
+	&__moreImages {
+		display: flex;
+		gap: constants.$pad;
+		padding: 0 constants.$pad;
+		> img {
+			flex: 1;
+			aspect-ratio: 370/280;
+			min-width: 0;
+		}
+	}
+	&__moreParagraphs {
+		display: flex;
+		margin-top: helper.toRem(134);
+		margin-bottom: helper.toRem(123);
+		> * {
+			flex: 1;
+		}
+	}
+	&__locationImages {
+		display: flex;
+		gap: constants.$pad * 2;
+		flex-direction: column;
+		> .top {
+			display: flex;
+			gap: constants.$pad * 2;
+
+			> img {
+				flex: 1;
+				min-width: 0;
+				aspect-ratio: 555/436;
+			}
+		}
+		> .bottom {
+			aspect-ratio: 1140/ 574;
+			object-fit: cover;
+		}
+	}
+}

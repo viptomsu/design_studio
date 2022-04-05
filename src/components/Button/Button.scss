@@ -1,0 +1,38 @@
+@use '../../assets/scss/helper';
+@use '../../assets/scss/constants';
+@use '../../assets/scss/mixin';
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	font-family: inherit;
+	background: none;
+	border: none;
+	outline: none;
+	font-size: helper.toRem(15);
+	min-height: helper.toRem(44);
+	padding: 0 2.5rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	&--outline {
+		color: constants.$primary;
+		border: 1px solid currentColor;
+		&:hover {
+			color: constants.$white;
+			background-color: constants.$primary;
+			border-color: constants.$primary;
+		}
+	}
+	&--block {
+		@include mixin.flexbox();
+		width: 100%;
+		aspect-ratio: 2/1;
+		font: {
+			size: helper.toRem(33);
+			weight: 500;
+		}
+		letter-spacing: 1px;
+		color: constants.$boldWhite;
+		background-color: constants.$primary;
+	}
+}

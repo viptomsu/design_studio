@@ -1,0 +1,17 @@
+@use '../../assets/scss/constants';
+
+.link {
+	display: inline-block;
+	text-decoration: none;
+	color: constants.$grayText;
+	&.active {
+		color: constants.$primary;
+		pointer-events: none;
+	}
+	&--dark{
+		color: constants.$white;
+		&.active{
+			color: constants.$grayText;
+		}
+	}
+}

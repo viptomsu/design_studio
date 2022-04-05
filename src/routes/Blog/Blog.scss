@@ -1,0 +1,20 @@
+@use '../../assets/scss/helper';
+@use '../../assets/scss/constants';
+
+.blog {
+	&__posts {
+		$gap: constants.$pad;
+		display: flex;
+		flex-wrap: wrap;
+		> .card {
+			padding: $gap;
+			flex-basis: 50%;
+			.card__img {
+				aspect-ratio: 555/368;
+			}
+			.card__detail {
+				min-height: helper.toRem(180);
+			}
+		}
+	}
+}

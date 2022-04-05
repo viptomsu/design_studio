@@ -1,0 +1,11 @@
+@mixin flexbox($justify: center, $align: center, $gap: false, $col: false) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	@if $gap {
+		gap: $gap
+	}
+	@if $col {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,42 @@
+@use '../../assets/scss/helper';
+@use '../../assets/scss/constants';
+
+.card {
+	&__img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 555/308;
+		cursor: pointer;
+	}
+	&__detail {
+		padding: 1.375rem;
+		min-height: helper.toRem(214);
+		line-height: helper.toRem(36);
+		letter-spacing: 0.025em;
+	}
+	&__title, &__author {
+		color: constants.$primary;
+	}
+	&__title {
+		font: {
+			size: helper.toRem(23);
+			weight: 700;
+		}
+		text-transform: capitalize;
+		cursor: pointer;
+	}
+	&__author {
+		font: {
+			size: helper.toRem(20);
+			weight: 400;
+		}
+	}
+	&__based {
+		font: {
+			size: helper.toRem(15);
+			weight: 300;
+			style: italic;
+		}
+		color: constants.$grayText;
+	}
+}

@@ -1,0 +1,9 @@
+@use './helper';
+
+$primary: #161616;
+$textColor: #545454;
+$grayText: #999999;
+$white: white;
+$boldWhite: #e9e9e9;
+$homeGap: helper.toRem(140);
+$pad: helper.toRem(15);

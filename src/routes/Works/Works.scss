@@ -1,0 +1,15 @@
+@use '../../assets/scss/constants';
+
+.works {
+	&__projects {
+		display: flex;
+		flex-wrap: wrap;
+		> .card {
+			flex-basis: 50%;
+			padding: constants.$pad;
+		}
+	}
+	.big-buttons {
+		margin-top: constants.$pad;
+	}
+}
